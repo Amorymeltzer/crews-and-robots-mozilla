@@ -33,6 +33,14 @@
 	var v = textNode.nodeValue;
 
 	// Unmanned first
+	// Take care of 'an' versus 'a'
+	v = v.replace(/\b(A|a)n (U|u)nmanned/g, function(match, p1, offset, string) {
+	    // f + 2 = h
+	    a = String.fromCharCode(p1.charCodeAt(0) + 0);
+	    r = String.fromCharCode(p2.charCodeAt(0) - 3);
+	    return a + " " + r + "obotic";
+	});
+
 	v = v.replace(/\b(U|u)nmanned/g, function(match, p1, offset, string) {
 	    // f + 2 = h
 	    r = String.fromCharCode(p1.charCodeAt(0) - 3);
