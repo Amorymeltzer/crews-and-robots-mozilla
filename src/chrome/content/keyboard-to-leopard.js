@@ -32,32 +32,19 @@
     function handleText(textNode) {
 	var v = textNode.nodeValue;
 
-	// Deal with the easy case
-	v = v.replace(/\b(K|k)eyboard/g, function(match, p1, offset, string) {
+	// Unmanned first
+	v = v.replace(/\b(U|u)nmanned/g, function(match, p1, offset, string) {
 	    // f + 2 = h
-	    // b + 17 = s
-	    l = String.fromCharCode(p1.charCodeAt(0) + 1);
-	    return l + "eopard";
+	    r = String.fromCharCode(p1.charCodeAt(0) - 3);
+	    return r + "obotic";
 	});
 
-	v = v.replace(/\b(K)EYBOARD/g, function(match, p1, offset, string) {
-	    // f + 2 = h
-	    // b + 17 = s
-	    h = String.fromCharCode(p1.charCodeAt(0) + 1);
-	    return h + "EOPARD";
+	v = v.replace(/\b(M|m)anned/g, function(match, p1, offset, string) {
+	    // m - 10 = c
+	    c = String.fromCharCode(p1.charCodeAt(0) - 10);
+	    return c + "rewed";
 	});
 
-	// Get the corner cases
-	// if(v.match(/cloud/i)) {
-	//     // If we're not talking about weather
-	//     if(v.match(/PaaS|SaaS|IaaS|computing|data|storage|cluster|distributed|server|hosting|provider|grid|enterprise|provision|apps|hardware|software|/i)) {
-	//	v = v.replace(/(C|c)loud/gi, function(match, p1, offset, string) {
-	//	    // c - 1 = b
-	//	    b = String.fromCharCode(p1.charCodeAt(0) - 1);
-	//	    return b + "utt";
-	//	});
-	//     }
-	// }
 	textNode.nodeValue = v;
     }
 

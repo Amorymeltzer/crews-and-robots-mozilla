@@ -3,15 +3,15 @@
   <RDF:Description about="urn:mozilla:install-manifest">
 
     <!-- GUID and type -->
-    <em:id>keyboard-to-leopard@github.com</em:id>
+    <em:id>crews-and-robots@github.com</em:id>
     <em:type>2</em:type>
 
     <!-- Extension details -->
-    <em:name>keyboard-to-leopard</em:name>
-    <em:description>Replaces the text 'keyboard' with 'leopard'.</em:description>
-    <em:creator>Amory Meltzer forked from code by Steven Frank and Ioan Loosley</em:creator>
+    <em:name>crews-and-robots</em:name>
+    <em:description>Replaces 'manned' and 'unmanned' with 'crewed' and 'robotic'.</em:description>
+    <em:creator>Amory Meltzer forked from code by Steven Frank and Ioan Loosley, idea by Robert A. McNees</em:creator>
     <em:developer>Amory Meltzer</em:developer>
-    <em:homepageURL>https://github.com/Amorymeltzer/keyboard-to-leopard-mozilla/</em:homepageURL>
+    <em:homepageURL>https://github.com/Amorymeltzer/crews-and-robots-mozilla/</em:homepageURL>
 
     <!-- Current version -->
     <em:version>1.0</em:version>
